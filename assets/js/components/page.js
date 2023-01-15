@@ -32,7 +32,8 @@ export default {
             axios
                 .get('http://dev7.pro/gitSelect/api/states.php?country_id='+$event.target.value)
                 .then(response => (this.states = response.data)),
-            this.stateVisibility = true
+                this.stateVisibility = true
+                this.districVisibility = false
         },
         loadDistric: function($event) {
             axios
